@@ -1,0 +1,32 @@
+.container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.acoes {
+  margin-bottom: 15px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #135ba1;
+}
+
+.disponivel {
+  color: green;
+  font-weight: bold;
+}
+
+.indisponivel {
+  color: red;
+  font-style: italic;
+}
