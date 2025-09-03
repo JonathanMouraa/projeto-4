@@ -14,7 +14,18 @@ const routes: Routes = [
   {
     path: 'produto',
     loadChildren: () => import('./produto/produto-module').then(m => m.ProdutoModule)
+  },
+
+  {
+    path: 'shared',
+    loadChildren: () => import('./shared/shared-module').then(m => m.SharedModule)
+  },
+
+{
+    path: 'produtos2',
+    loadChildren: () => import('./produtos2/produtos2-module').then(m => m.Produtos2Module)
   }
+
 ];
 
 @NgModule({
