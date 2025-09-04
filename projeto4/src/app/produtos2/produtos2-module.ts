@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Produtos2RoutingModule } from './produtos2-routing-module';
 import { Listaprodutos } from './listaprodutos/listaprodutos';
 import { SharedModule } from '../shared/shared-module';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import { SharedModule } from '../shared/shared-module';
   imports: [
     CommonModule,
     Produtos2RoutingModule,
-    SharedModule
+    SharedModule,
+    MatToolbarModule
   ]
 })
 export class Produtos2Module { }
