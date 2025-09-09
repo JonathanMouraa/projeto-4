@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ToolbarApp } from './toolbar-app/toolbar-app';
+
 
 const routes: Routes = [
   {
@@ -24,6 +26,9 @@ const routes: Routes = [
 {
     path: 'produtos2',
     loadChildren: () => import('./produtos2/produtos2-module').then(m => m.Produtos2Module)
+  },
+  {
+    path: 'toolbar-app', component: ToolbarApp
   }
 
 ];
