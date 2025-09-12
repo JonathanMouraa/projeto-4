@@ -29,6 +29,10 @@ const routes: Routes = [
   },
   {
     path: 'toolbar-app', component: ToolbarApp
+  },
+  {
+    path: 'dados',
+    loadChildren: () => import('./dados/dados-module').then(m => m.DadosModule)
   }
 
 ];
