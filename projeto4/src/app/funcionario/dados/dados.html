@@ -1,7 +1,7 @@
 <div class="card">
-    <p><strong>nome:</strong>{{funcionario.nome}}</p>
-    <p><strong>salário:</strong>{{funcionario.salario | currency: 'BRL':'simbol':'1.2-2'}}</p>
+    <p>Nome: {{nome}}</p>
+    <p>Salário: {{salario}}</p>
 
-    <button (click)="Exibir()">Exibir</button>
-    <button (click)="Ocultar()">Ocultar</button>
+    <button (click)="exibir()">Clique para exibir</button>
+    <button (click)="ocultar()">Clique para ocultar</button>
 </div>

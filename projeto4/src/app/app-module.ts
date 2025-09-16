@@ -8,6 +8,7 @@ import { ToolbarApp } from './toolbar-app/toolbar-app';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
+import { FuncionarioModule } from './funcionario/funcionario-module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {MatChipsModule} from '@angular/material/chips';
     ProdutoModule,
     MatProgressBarModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    FuncionarioModule
 
 
   ],
