@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { produto } from '../modelo/Produto';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-tabela',
@@ -13,5 +14,48 @@ export class Tabela {
   dataSource: produto[] = [
     {nome: 'coca-cola', valor: 10},
     {nome: 'fanta', valor: 8}
-  ]
+  ];
+
+
+
+
+
+
+
+  logado: boolean = false;
+
+  alternarLogin() {
+    this.logado = !this.logado;
+  };
+
+
+
+
+
+  
+  tarefas: String[] = ['Estudar Angular', 'Praticar TypeScript'];
+  novaTarefa: string = '';
+
+  adicionarTarefa() {
+    if (this.novaTarefa.trim()) {
+      this.tarefas.push(this.novaTarefa);
+      this.novaTarefa = '';
+    }
+  }
+
+  removerTarefa(index: number) {
+    this.tarefas.splice(index, 1);
+  }
+
+
+
+
+
+
+
+aluno = {
+    nome: 'João',
+    nota: 8
+  };
+
 }

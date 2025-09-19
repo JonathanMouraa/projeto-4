@@ -9,6 +9,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import { FuncionarioModule } from './funcionario/funcionario-module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FuncionarioModule } from './funcionario/funcionario-module';
     MatProgressBarModule,
     MatCardModule,
     MatChipsModule,
-    FuncionarioModule
+    FuncionarioModule,
+    FormsModule
 
 
   ],

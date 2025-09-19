@@ -18,3 +18,40 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+
+
+
+
+
+
+<div *ngIf="logado; else naoLogado">
+  <p>Bem-vindo ao sistema!</p>
+</div>
+
+<ng-template #naoLogado>
+  <p>Você precisa se autenticar.</p>
+</ng-template>
+
+<button (click)="alternarLogin()">
+  {{ logado ? 'Sair' : 'Entrar' }}
+</button>
+
+
+
+
+
+<input [(ngModel)]="novaTarefa" placeholder="Nova tarefa" />
+<button (click)="adicionarTarefa()">Adicionar</button>
+
+<ul>
+  <li *ngFor="let tarefa of tarefas; let i = index">
+    {{ tarefa }}
+    <button (click)="removerTarefa(i)">Remover</button>
+  </li>
+</ul>
+
+
+
+
+
