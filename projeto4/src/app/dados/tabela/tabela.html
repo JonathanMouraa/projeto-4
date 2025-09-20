@@ -41,8 +41,8 @@
 
 
 
-<input [(ngModel)]="novaTarefa" placeholder="Nova tarefa" />
-<button (click)="adicionarTarefa()">Adicionar</button>
+<p><input [(ngModel)]="novaTarefa" placeholder="Nova tarefa" />
+<button (click)="adicionarTarefa()">Adicionar</button></p>
 
 <ul>
   <li *ngFor="let tarefa of tarefas; let i = index">
@@ -53,5 +53,11 @@
 
 
 
+
+
+
+<p [ngStyle]="{'color': nota >= 7 ? 'green' : 'red'}">
+  {{ nome }} - Nota: {{ nota }}
+</p>
 
 

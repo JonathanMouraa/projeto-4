@@ -53,9 +53,7 @@ export class Tabela {
 
 
 
-aluno = {
-    nome: 'João',
-    nota: 8
-  };
+nome: string = 'Jonathan Moura';
+  nota: number = 6;
 
 }

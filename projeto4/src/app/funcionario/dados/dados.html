@@ -1,7 +1,7 @@
-<div class="card">
-    <p>Nome: {{nome}}</p>
-    <p>Salário: {{salario}}</p>
+<button (click)="mostrar()">Exibir</button>
+<button (click)="ocultar()">Ocultar</button>
 
-    <button (click)="exibir()">Clique para exibir</button>
-    <button (click)="ocultar()">Clique para ocultar</button>
+<div *ngIf="exibir">
+  <p>Nome: {{ nome }}</p>
+  <p>Salário: {{ salario }}</p>
 </div>
